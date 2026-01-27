@@ -1,0 +1,25 @@
+.footer {
+  line-height: 0.1rem;
+}
+
+.app-footer {
+  background-color: var(--section-bg-color);
+  padding: 0 !important;
+}
+
+.name {
+  font-size: 10vmin;
+  color: var(--bright-text-color);
+  padding-left: 1rem;
+  opacity: 1;
+}
+
+.text {
+  font-size: 4vmin;
+}
+
+@media (max-width: 500px) or (max-height: 500px) {
+  .do-not-display {
+    display: none;
+  }
+}
