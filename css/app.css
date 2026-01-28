@@ -1,29 +1,70 @@
 :root {
-  --base-text-color: #636d70;
-  --section-bg-color: #eff7fb;
-  --bright-text-color: #1995AD;
+  --base-text-color: #D2C1B6;
+  --section-bg-color: #456882;
+  --bright-text-color: #D2C1B6;
   --border-radius: 15%;
 }
 
-.container-body {
-  background-color: #ffffff;
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+body {
+   height: 100%;
+   overflow: auto;
+   background-color:  #1B3C53;;
+   color: var(--base-text-color) !important;
+   font-family: "Times New Roman", Times, serif;
 }
 
-.bg-dark {
-  background-color: var(--section-bg-color) !important;
+.portfolio-navbar {
+    justify-content: center;
+    background-color: transparent;
+}
+
+.nav-link.active {
+    background-color: transparent !important;
+    box-shadow: 0px 1px 5px var(--bright-text-color);
+}
+
+a {
+    color: inherit !important;
+    text-underline-offset: 0.25em !important;
+
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+}
+
+.card {
+  border: none;	
+  color: var(--base-text-color);
+  background-color: transparent;
+  box-shadow: 0px 1px 5px var(--bright-text-color);
+}
+
+.box-shadow {
+  box-shadow: 0px 1px 5px var(--bright-text-color);
+}
+
+.card-header {
+  background-color: transparent !important;
+  border:none;
+}
+
+.name {
+  font-size: 10vw;
+  color: var(--bright-text-color);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  opacity: 1;
+  box-shadow: 0px 1px 5px var(--bright-text-color);
 }
 
 .icons {
   color: var(--bright-text-color);
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   text-decoration: none;
+  box-shadow: 0px 1px 5px var(--bright-text-color);
 }
 
 .icons:hover {
@@ -32,35 +73,16 @@
   text-decoration: none;
 }
 
-.badge {
-  color: var(--bright-text-color) !important;
-  box-shadow: 1px 1px 1px var(--bright-text-color);
+.scrollspy-section {
+  position:relative; 
+  height: 20%; 
+  overflow: scroll;
 }
 
-.card {
-  border: none;	
-  color: var(--base-text-color);
-  background-color: transparent;
-}
 
-.card-header {
-  background-color: transparent !important;
-  border:none;
-}
-
-.borderTopBottom {
-  border-top-left-radius: var(--border-radius) var(--border-radius);
-  border-top-right-radius: var(--border-radius) var(--border-radius);
-  border-bottom-right-radius: var(--border-radius) var(--border-radius);
-  border-bottom-left-radius: var(--border-radius) var(--border-radius);
-  border-bottom: 1px solid var(--base-text-color) !important;
-  border-top: 1px solid var(--base-text-color) !important;
-}
-
-.nav-link {
-  color: var(--bright-text-color) !important;
-}
-
-.nav-link:hover {
-  text-shadow: 1px 1px 20px var(--bright-text-color);
-}
+/*
+1B3C53
+234C6A
+456882
+D2C1B6
+*/
